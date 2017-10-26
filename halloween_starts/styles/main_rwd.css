@@ -1,0 +1,188 @@
+*style elements */
+html{
+	background-image: url("../images/bats.gif");
+}
+body {
+	font-size: 100%;
+	width: 90%;                  /* changed from 960px */
+    max-width: 960px;           
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+	background-color: white;
+	margin: 0 auto;
+	padding: 0;
+    border: 3px solid black;
+    box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+a{
+	font-weight: bold;
+	color: orange;
+}
+a:link, a:visited{
+	color: orange;
+}
+a:hover, a:focus{
+	color: green;
+}
+
+section img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: .5em;
+}
+
+/*header styles */
+header{
+	width: 96.875%;              /* 930 ÷ 960 x 100 */
+    padding: 15px 1.5625%;       
+
+	background: -moz-linear-gradient(45deg, white, orange 75%, black);
+	background: -webkit-linear-gradient(45deg, white, orange 75%, black);
+	background: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background: linear-gradient(45deg, white, orange 75%, black);
+	padding: 15px;
+	border-bottom: 2px solid black;
+}
+header img {
+	
+	float: left;
+	padding-right:15px;
+}
+header h2{
+	font-size: 1.75em;
+}
+header h3{
+	font-size: 1.125em;
+}
+
+
+/*style for navigation Menu*/
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 80%;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu :hover{
+	background-color: #606060;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+	color: #606060;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*styles for main*/
+main {
+	width: 59.375%;              /* 570 ÷ 960 x 100 */             
+    padding: 15px 1.5625%;       
+
+	padding: 20px 25px 25px 25px;
+}
+main h1 {
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+main h1:first-letter {
+	font-size: 240%;
+}
+main h2{
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+main h3{
+	font-size: 110%;
+	margin-bottom: .5em;
+}
+main p{
+	margin-bottom: .5em;
+}
+main ul {
+	margin-top: 0;
+}
+
+
+/*styles for section*/
+section {
+	width: 590px;
+	float: right;
+}
+
+
+/*styles for aside*/
+aside {
+	width: 34.375%;              /* 330 ÷ 960 x 100 */
+    padding: 15px 1.5625%;       
+
+	float: left;
+	margin-left: -30px;
+}
+aside ul{
+	line-height: 25px;
+	list-style-type: none;
+}
+aside a:link, a:visited {
+	width: 100px;
+    background-color: orange;
+    font-size: 90%;
+    color: black;
+    border: 2px solid black;
+    padding: 2px 2px 2px 2px;
+    margin: 4px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*styles for footer*/
+footer {
+	width: 96.875%;              /* 930 ÷ 960 x 100 */
+    padding: 15px 1.5625%;       
+
+	border-top: 2px solid black;
+	clear: both;
+	
+	background: -moz-linear-gradient(45deg, black, orange 75%, white);
+	background: -webkit-linear-gradient(45deg, black, orange 75%, white);
+	background: linear-gradient(45deg, black, orange 75%, white);
+}
+footer p{
+	font-size: .75em;
+	text-align: center;
+}
+
+
+
